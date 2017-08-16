@@ -61,6 +61,7 @@ public class AlmostSorted {
 		}
 		int diffCount = Math.abs(d1-d2);
 		if(diffCount==1){//is it necessary? cant be handled as part of next codition?
+			System.out.println("yes");
 			System.out.println("swap "+(d1+1)+" "+(d2+1));
 		}//else if(d1==0 && d2==arr.length-1){			}
 		else{

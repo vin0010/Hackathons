@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Solution {
+public class Median4 {
 	static void pairs(ArrayList<Integer> sortedKeys, char ch, int x) {
 		if (ch == 'a') {
 			sortedKeys.add(x);

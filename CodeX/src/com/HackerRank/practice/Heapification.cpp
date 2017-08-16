@@ -63,10 +63,23 @@ void buildMinHeap(int *arr, int n){
 		minHeapify(arr,n,i);
 	}
 }
-int findIndexMaxHeap(int *arr, int n, int k){
+int findIndexMaxHeap(int *arr, int n, int k){//need to be tuned properly to avoid unnecessary checks
 	for(int i=1;i<n/2;i++){
-		if(){
-
+		if(arr[i]<k){
+			continue;
+		}else{
+			if(arr[i]==k){
+				return k;
+			}else{
+				int l=2*i;
+				int r=(2*i)+1;
+				if(l<n && arr[l]==k){
+					return l;
+				}
+				if(r<n && arr[r]==k){
+					return r;
+				}
+			}
 		}
 	}
 }
